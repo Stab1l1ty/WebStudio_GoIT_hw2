@@ -1,0 +1,289 @@
+@import url("./_variables.css");
+
+
+body {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color:#212121;
+    letter-spacing: 0.03em;
+    border: 0;
+    padding: 0;
+    
+}
+.container {
+    max-width: var(--container-width);
+    padding: 0 var(--container-padding);
+    margin: 0 auto;
+}
+ul {
+    padding-left: 0;
+}
+
+li {
+    list-style-type: none;
+}
+a, button{
+    text-decoration: none;
+    cursor: pointer;
+    color:#212121;
+}
+
+.header {
+    
+    max-height: 80px;
+    padding: 24px 0;
+    
+}
+
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+}
+
+.menu {
+    display: inline-flex;
+    margin-left: 93px;
+    column-gap: 50px;
+}
+
+.active {
+    color: var(--color-brand);
+}
+.menu .menu-item:hover {
+    color: var(--color-brand);
+}
+
+
+.contacts {
+    display: inline-flex;
+    column-gap: 50px;
+    align-items: flex-end;
+}
+
+.logo-link {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+
+}
+.logo-link>span {
+    color:  var(--color-brand);
+}
+
+.contacts .email:hover,
+.contacts .email:focus,
+.contacts .phone:hover,
+.contacts .phone:focus{
+    color: var(--color-brand);
+}
+
+.contacts .footer-address:hover,
+.contacts .footer-address:focus{
+    color: var(--color-brand);
+}
+.subheader {
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+}
+
+
+
+.button {
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.solution {
+    padding: 200px 0 280px;
+    display: flex;
+    flex-direction: column;
+ 
+    text-align: center;
+    height: 600px;
+    background-color: var(--background-color);
+}
+.solution-header {
+    
+    width: 696px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.solution-button {
+    width: 216px;
+    height: 50px;
+    margin-top: 20px;
+    background-color: var(--color-brand);
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+}
+.solution .solution-button:hover {
+    background-color: #06518f;
+}
+.peculiarity {
+    padding: 96px 0 145px 0;
+}
+.peculiarity-subheader{
+    clip-path: inset(100%); 
+    clip: rect(0 0 0 0);
+}
+.peculiarity .peculiarity-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.peculiarity .peculiarity-descr {
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--secondary-color-txt);
+}
+
+
+.study {
+    min-height: 387px;
+    padding-top: 100px;
+}
+
+.study-img {
+    display: flex;
+    column-gap: 30px;
+    justify-content: center;
+    
+}
+.study-img img {
+    width: 100%;
+}
+
+.team {
+    min-height: 590px;
+    padding: 37px 0 99px;
+}
+
+.team-wrapper {
+    margin-top: 45px;
+    display: flex;
+    column-gap: 30px;
+    justify-content: center;
+}
+
+.team-img img {
+    width: 100%;
+}
+
+.team-title {
+    margin-top: 30px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+}
+
+.team-profession {
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: var(--secondary-color-txt);
+}
+
+.footer {
+    display: block;
+    height: 252px;
+    padding: 60px 0;
+    background-color: var(--background-color);
+    
+}
+.footer-logo-link {
+    
+    color: #fff;
+}
+.footer-contacts {
+    display: flex;
+    
+    
+}
+
+.footer-address {
+    
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.footer-email,
+.footer-phone {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.6);
+}
+/* Portfolio */
+.promo {
+    
+    padding: 80px 0 94px 0;
+    min-height: 1360px;
+}
+.promo-filter {
+    
+    display: flex;
+    column-gap: 8px;
+    justify-content: center;
+}
+.promo-subheader {
+    clip-path: inset(100%); 
+    clip: rect(0 0 0 0);
+}
+.promo-button {
+    padding: 6px 22px;
+    background-color: #F5F4FA;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+}
+.promo-button-active,
+.promo-button-active:active {
+    background-color: var(--color-brand);
+    color: #fff;
+}
+
+.promo-button:hover,
+.promo-button:focus {
+    transition: color 0.2s ease-in;
+    background-color: var(--color-brand);
+    color: #fff;
+}
+
+.promo-wrapper {
+    overflow: hidden;
+    column-gap: 30px;
+    max-width: 1190px;
+    margin-top: 34px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.promo-subtitle {
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.06em;
+}
+.promo-descr {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color: var(--secondary-color-txt);
+}
